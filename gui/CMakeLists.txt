@@ -6,6 +6,6 @@ project(gui)
 
 add_subdirectory(analogclock)
 
-#add_subdirectory(openglwindow)
+add_subdirectory(openglwindow)
 
-#add_subdirectory(rasterwindow)
+add_subdirectory(rasterwindow)

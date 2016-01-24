@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 2.8.11)
 
-project(gui)
+project(openglwindow)
 
 
+SET(src 
+     openglwindow.cpp
+	 main.cpp
+     )
 
-add_subdirectory()
 
 
 
@@ -15,10 +18,10 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 
 # Find the QtWidgets library
-find_package(Qt5Widgets)
+find_package(Qt5GUI)
 
 # Tell CMake to create the helloworld executable
-add_executable(helloworld WIN32 main.cpp)
+add_executable(openglwindow ${src})
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(helloworld Qt5::Widgets)
+target_link_libraries(openglwindow Qt5::Gui)
