@@ -18,7 +18,7 @@ get_target_property(QtGUI_location Qt5::Gui LOCATION)
 
 message("QtGUI_location,${QtGUI_location}")
 # Tell CMake to create the helloworld executable
-add_executable(analogclock WIN32 main.cpp)
+add_executable(analogclock WIN32 rasterwindow.cpp main.cpp)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(analogclock Qt5::Gui)
