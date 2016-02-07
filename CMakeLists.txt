@@ -9,4 +9,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Output)
 
 add_subdirectory(gui)
 add_subdirectory(extending-qml)
- 
+add_subdirectory(D-Pointer)
